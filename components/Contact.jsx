@@ -5,9 +5,12 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
+import {useRouter} from 'next/router'
 
 function Contact() {
-  async function handleOnSubmit(e) {
+
+  const router = useRouter();
+  async function handleOnSubmit(e) {   
     e.preventDefault();
     const formData = {}
     Array.from(e.currentTarget.elements).forEach(field => {
@@ -21,6 +24,7 @@ function Contact() {
 
     })
     console.log(formData);
+    router.push('/contactResponse')
   }
   return (
     <div id='contact' className='w-full lg:h-screen'>
