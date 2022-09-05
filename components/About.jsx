@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import aboutImg from '../public/assets/teamWork.jpeg'
 
 function About() {
   return (
@@ -15,7 +16,7 @@ function About() {
           <p className='py-2 text-gray-600 underline cursor-pointer'>Check out some of my latest projects.</p>
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-          <img src='https://rare-gallery.com/thumbs/505165-work-pen-programming.jpg' alt='/' />
+          <Image src={aboutImg}  alt='/' />
         </div>
       </div>
     </div>

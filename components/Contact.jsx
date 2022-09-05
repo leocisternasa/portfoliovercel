@@ -6,6 +6,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import {useRouter} from 'next/router'
+import contactImg from '../public/assets/contactImg.jpg'
 
 function Contact() {
 
@@ -35,12 +36,12 @@ function Contact() {
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
             <div className='lg:p-4 h-full'>
               <div>
-                <img className='rounded hover:scale-105 ease-in duration-300' src='rare-gallery.com/thumbs/505165-work-pen-programming.jpg' alt='/' />
+                <Image className='rounded hover:scale-105 ease-in duration-300' src={contactImg} alt='/' />
               </div>
               <div>
                 <h2 className='py-2'>Name Here</h2>
                 <p>Front-End Developer</p>
-                <p className='py-4'>I am available for freelance or full-time positions.n Contact me and let`s talk</p>
+                <p className='py-4'>I am available for freelance or full-time positions. Contact me and let`s talk</p>
               </div>
 
               <div>
