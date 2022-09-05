@@ -15,7 +15,7 @@ function Contact() {
       formData[field.name] = field.value
 
     })
-    fetch('/api/mail', {
+    await fetch('/api/mail', {
       method: 'POST',
       body: JSON.stringify(formData)
 
