@@ -23,7 +23,7 @@ export default function handler(req, res) {
   };
   mail.send(data).then(()=>{
     console.log('Email sent')
-  }).catch(()=>{
+  }).catch((error)=>{
     console.log(error)
   })
 
