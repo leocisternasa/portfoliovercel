@@ -31,7 +31,7 @@ function Contact() {
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
             <div className='lg:p-4 h-full'>
               <div>
-                <img className='rounded hover:scale-105 ease-in duration-300' src='https://rare-gallery.com/thumbs/505165-work-pen-programming.jpg' alt='/' />
+                <img className='rounded hover:scale-105 ease-in duration-300' src='rare-gallery.com/thumbs/505165-work-pen-programming.jpg' alt='/' />
               </div>
               <div>
                 <h2 className='py-2'>Name Here</h2>
