@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import aboutImg from "../public/assets/teamWork.jpeg";
+import Link from "next/link";
 
 function About({ inIndex }) {
   return (
@@ -41,12 +42,12 @@ function About({ inIndex }) {
             the needs and concerns of clients.
           </p>
           {inIndex ? (
-            <a
+            <Link
               href="/about"
               className="cursor-pointer underline font-semibold hover:font-bold"
             >
               Leer mas...
-            </a>
+            </Link>
           ) : (
             <>
               <p className="py-2 pr-36 text-gray-600">
