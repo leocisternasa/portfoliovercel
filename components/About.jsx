@@ -17,7 +17,7 @@ function About({ inIndex }) {
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">
             {" "}
-            I am a front end developer whit different experiences
+            I am a front end developer with different experiences
           </p>
           <p className="py-2 pr-36 text-gray-600">
             {" "}
