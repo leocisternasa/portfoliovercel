@@ -42,7 +42,7 @@ function Contact() {
                 />
               </div>
               <div>
-                <h2 className="py-2">Name Here</h2>
+                <h2 className="py-2">Leonardo Cisternas</h2>
                 <p>Front-End Developer</p>
                 <p className="py-4">
                   I am available for freelance or full-time positions. Contact
@@ -51,7 +51,6 @@ function Contact() {
               </div>
 
               <div>
-                <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
