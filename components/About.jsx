@@ -7,7 +7,7 @@ function About({ inIndex }) {
   return (
     <div
       id="about"
-      className="w-full md:h-screen p-2 flex items-center py-16 mb-64"
+      className="w-full h-auto  p-2 flex items-center py-16 mb-40"
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 mt-5">
         <div className="col-span-2">
@@ -21,8 +21,9 @@ function About({ inIndex }) {
           </p>
           <p className="py-2 pr-36 text-gray-600">
             {" "}
-            I am a web developer with almost 2 years of experience, specializing
-            in web application development with strong skills in JavaScript and
+            I am a web developer with 2 years of experience working in teams for
+            other companies and 1 year as a freelancer, specializing in web
+            application development with strong skills in JavaScript and
             React.js. Working with frameworks like Next.js, SvelteKit, and
             Meteor has allowed me to create robust and efficient projects while
             collaborating effectively with teams.{" "}
@@ -35,21 +36,27 @@ function About({ inIndex }) {
             facilitating collaborative work.
           </p>
           <p className="py-2 pr-36 text-gray-600">
-            However, what sets me apart from the norm is my diverse background
-            in the healthcare field, where I spent the last 9 years as a
-            professional dentist. This unique experience has nurtured excellent
-            communication skills and empathy, allowing me to deeply understand
-            the needs and concerns of clients.
+            My eagerness to expand my understanding of applications led me to
+            undertake an intensive Fullstack Bootcamp trainee program, where I
+            was able to learn and create projects with JavaScript and Node.js
+            using Express. I also have experience with SQL databases (PostgreSQL
+            and MySQL) and NoSQL databases (MongoDB), as well as in
+            communication and management through SQL queries and/or using an ORM
+            (Sequelize and Prisma).
           </p>
           {inIndex ? (
-            <Link
-              href="/about"
-              className="cursor-pointer underline font-semibold hover:font-bold"
-            >
-              Leer mas...
+            <Link href="/about" className="cursor-pointer ">
+              <a className="text-[#5651e5] hover:font-semibold">Leer mas...</a>
             </Link>
           ) : (
             <>
+              <p className="py-2 pr-36 text-gray-600">
+                What sets me apart from the norm is my diverse background in the
+                healthcare field, where I spent the last 9 years as a
+                professional dentist. This unique experience has nurtured
+                excellent communication skills and empathy, allowing me to
+                deeply understand the needs and concerns of clients.
+              </p>
               <p className="py-2 pr-36 text-gray-600">
                 My journey into the tech industry began in 2018 when I started
                 self-learning through tutorials and online courses, driven by my
@@ -94,13 +101,13 @@ function About({ inIndex }) {
         <div>
           {!inIndex && (
             <a
-              href="/ResumeLeonardo.Cisternas.pdf"
+              href="/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
             >
               <button className="px-8 py-2 mt-10 mr-8 ml-[25vw] md:ml-[5vw] md:mt-[15vh] mb-10">
-                Download my CV
+                Download my Resume
               </button>
             </a>
           )}

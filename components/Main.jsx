@@ -3,6 +3,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import AnimatedTitle from "./AnimatedTitle";
 
 function Main() {
   return (
@@ -15,8 +16,8 @@ function Main() {
           <h1 className="py-4 text-gray-700">
             Hi, I`m <span className="text-[#5656e5]">Leonardo</span>
           </h1>
-          <h1 className="py-4 text-gray-700">A Front-End Web Developer</h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
+          <AnimatedTitle />
+          <p className="py-4 text-gray-600 max-w-[70%] m-auto mt-14">
             I`m a front-end web developer specializing in building exceptional
             digital experiences. Currently, I`m focusing on improving my
             front-end skills while learning back-end technologies

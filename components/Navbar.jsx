@@ -76,7 +76,7 @@ const Navbar = () => {
             <li className="ml-10 text-sm uppercase hover:border-b">
               <a
                 download
-                href="/ResumeLeonardo.Cisternas.pdf"
+                href="/Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -6,6 +6,7 @@ import ProjectItem from "./ProjectItem";
 import cryptoImg from "../public/assets/projects/crypto.jpg";
 import allmaDentalImg from "../public/assets/projects/allmaDentalMain.png";
 import getTranscriptImg from "../public/assets/projects/getTranscript.png";
+import foodeDeliverybg from "../public/assets/projects/foodCloneImg.png";
 function Projects() {
   return (
     <div id="projects" className="w-full">
@@ -19,7 +20,7 @@ function Projects() {
             title="Sitio de venta de Maquinas de tatuar"
             backgroundImg={maquinasDeTatuarImg}
             projectUrl="/maquinasDeTatuar"
-            stack="ReactJs, Tailwind"
+            stack="ReactJs, NextJs, Tailwind"
           />
           <ProjectItem
             title="Clinica Odontologica AllmaDental"
@@ -32,6 +33,12 @@ function Projects() {
             backgroundImg={getTranscriptImg}
             projectUrl="/getTranscript"
             stack="SvelteKit, Tailwind"
+          />
+          <ProjectItem
+            title="Movil Food Delivery Clone React Native"
+            backgroundImg={foodeDeliverybg}
+            projectUrl="/foodDeliveryClone"
+            stack="React Native, Expo, Firebase"
           />
         </div>
       </div>
