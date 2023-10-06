@@ -23,7 +23,7 @@ const AnimatedTitle = () => {
   return (
     <div className="flex justify-center align-middle flex-wrap">
       <animated.div
-        className="absolute sm:left-[39%] left-[45%] sm:top-[43.5%] top-[33%] translate-x-[-70%] font-bold text-3xl sm:text-5xl md:text-6xl text-gray-700"
+        className="absolute sm:left-[39%] left-[48.5%] sm:top-[43.5%] top-[33%] translate-x-[-70%] font-bold text-3xl sm:text-5xl md:text-6xl text-gray-700"
         style={word1Animation}
       >
         A Front-End
