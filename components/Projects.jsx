@@ -6,7 +6,7 @@ import ProjectItem from "./ProjectItem";
 import cryptoImg from "../public/assets/projects/crypto.jpg";
 import allmaDentalImg from "../public/assets/projects/allmaDentalMain.png";
 import getTranscriptImg from "../public/assets/projects/getTranscript.png";
-import foodeDeliverybg from "../public/assets/projects/foodCloneImg.png";
+import foodeDeliverybg from "../public/assets/projects/foodBg.png";
 function Projects() {
   return (
     <div id="projects" className="w-full">
