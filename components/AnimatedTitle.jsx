@@ -21,21 +21,21 @@ const AnimatedTitle = () => {
   });
 
   return (
-    <div className="flex justify-center align-middle">
+    <div className="flex justify-center align-middle flex-wrap">
       <animated.div
-        className="absolute left-[43%] translate-x-[-70%] font-bold text-3xl sm:text-5xl md:text-6xl text-gray-700"
+        className="absolute sm:left-[43%] left-[49%] sm:top-[43.5%] top-[33%] translate-x-[-70%] font-bold text-3xl sm:text-5xl md:text-6xl text-gray-700"
         style={word1Animation}
       >
         A Front-End
       </animated.div>
       <animated.div
-        className="absolute left-[44%] translate-x-[-50%] text-4xl sm:text-5xl md:text-6xl text-gray-700 font-bold"
+        className="absolute sm:left-[44%] left-[50%] sm:top-[43.5%] top-[33%] translate-x-[-50%] text-3xl sm:text-5xl md:text-6xl text-gray-700 font-bold"
         style={fallingAnimation}
       >
         / Full-Stack
       </animated.div>
       <animated.div
-        className="absolute left-[44%] translate-x-[70%] text-4xl sm:text-5xl md:text-6xl text-gray-700 font-bold"
+        className="absolute sm:left-[44%] left-[-23%] top-[37.5%] sm:top-[43.5%] translate-x-[70%] text-3xl sm:text-5xl md:text-6xl text-gray-700 font-bold"
         style={word2Animation}
       >
         Web Developer

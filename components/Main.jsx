@@ -9,7 +9,7 @@ import AnimatedTitle from "./AnimatedTitle";
 function Main() {
   return (
     <div id="home" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center ">
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-600">
             LET'S BUILD SOMETHING TOGETHER
@@ -17,7 +17,9 @@ function Main() {
           <h1 className="py-4 text-gray-700">
             Hi, I'm <span className="text-[#5656e5]">Leonardo</span>
           </h1>
-          <AnimatedTitle />
+          <div>
+            <AnimatedTitle />
+          </div>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto mt-14">
             I`m a front-end web developer specializing in building exceptional
             digital experiences. Currently, I`m focusing on improving my
@@ -30,7 +32,7 @@ function Main() {
               rel="noopener noreferrer"
             >
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                <FaLinkedinIn />
+                <FaLinkedinIn className="h-auto w-[25px]" />
               </div>
             </a>
 
@@ -40,12 +42,12 @@ function Main() {
               rel="noopener noreferrer"
             >
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                <FaGithub />
+                <FaGithub className="h-auto w-[25px]" />
               </div>
             </a>
             <Link href="/#contact">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                <AiOutlineMail />
+                <AiOutlineMail className="h-auto w-[25px]" />
               </div>
             </Link>
             {/* <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>

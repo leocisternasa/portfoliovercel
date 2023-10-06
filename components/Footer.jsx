@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="mt-[12vh]">
+    <div className="mt-[300px] m-auto">
       <p className="mt-8 text-center text-base text-gray-400">
         Web Site Developed with Next JS and deployed by Vercel
       </p>

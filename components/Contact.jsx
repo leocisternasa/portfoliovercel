@@ -53,13 +53,13 @@ function Contact() {
               <div>
                 <div className="flex items-center justify-between py-4">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
+                    <FaLinkedinIn className="h-auto w-[25px]" />
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub />
+                    <FaGithub className="h-auto w-[25px]" />
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail />
+                    <AiOutlineMail className="h-auto w-[25px]" />
                   </div>
                   {/* <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <BsFillPersonLinesFill />

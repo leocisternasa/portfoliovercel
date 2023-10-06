@@ -37,7 +37,7 @@ function FoodDeliveryClone() {
             as a framework. It is a clone of a food delivery application.
             Authentication is done using Firebase Auth..
           </p>
-          <div className="grid md:grid-cols-3 gap-2 my-10 w-full h-auto">
+          <div className="ml-11 sm:ml-auto grid md:grid-cols-3 gap-2 my-10 w-full h-auto">
             <div className="image-cotainer">
               <Image
                 className="rounded-xl group-hover:opacity-10 object-contain  "
@@ -124,6 +124,7 @@ function FoodDeliveryClone() {
             href="https://allma-dental.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            className="ml-20 sm:ml-[37%]"
           >
             <button className="px-8 py-2 mt-4 mr-8">
               Repository in Github
