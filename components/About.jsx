@@ -11,7 +11,7 @@ function About({ inIndex }) {
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 mt-5">
         <div className="col-span-2">
-          <p className="uppercase text-xl -tracking-widest text-[#5651e5]">
+          <p className="uppercase text-xl tracking-widest text-[#5651e5]">
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
