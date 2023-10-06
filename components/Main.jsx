@@ -11,15 +11,18 @@ function Main() {
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center ">
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-600">
-            LET'S BUILD SOMETHING TOGETHER
-          </p>
-          <h1 className="py-4 text-gray-700">
-            Hi, I'm <span className="text-[#5656e5]">Leonardo</span>
-          </h1>
+          <div className="mb-10 sm:mb-auto">
+            <p className="uppercase text-sm tracking-widest text-gray-600">
+              LET'S BUILD SOMETHING TOGETHER
+            </p>
+            <h1 className="py-4 text-gray-700">
+              Hi, I'm <span className="text-[#5656e5]">Leonardo</span>
+            </h1>
+          </div>
           <div>
             <AnimatedTitle />
           </div>
+
           <p className="py-4 text-gray-600 max-w-[70%] m-auto mt-14">
             I`m a front-end web developer specializing in building exceptional
             digital experiences. Currently, I`m focusing on improving my
