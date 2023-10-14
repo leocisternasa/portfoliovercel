@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useRouter } from "next/router";
@@ -12,16 +12,24 @@ function Contact() {
   const router = useRouter();
   async function handleOnSubmit(e) {
     e.preventDefault();
-    const formData = {};
-    Array.from(e.currentTarget.elements).forEach((field) => {
-      if (!field.name) return;
-      formData[field.name] = field.value;
-    });
+    const formData = {
+      from: "Contacto Portafolio <onboarding@resend.dev>",
+      to: "leocisal@gmail.com",
+      subject: "Te quieren contactar desde tu sitio web portafolio en vercel",
+      emailProps: {
+        name: e.target[0].value,
+        email: e.target[2].value,
+        phone: e.target[1].value,
+        asunto: e.target[3].value,
+        message: e.target[4].value,
+      },
+    };
+
     fetch("/api/mail", {
       method: "POST",
       body: JSON.stringify(formData),
     });
-    console.log(formData);
+    console.log("formData desde fetch", formData);
     router.push("/contactResponse");
   }
   return (

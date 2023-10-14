@@ -1,31 +1,26 @@
-import { MiddlewareNotFoundError } from 'next/dist/shared/lib/utils';
+import { EmailTemplate } from "../../components/EmailTemplate";
+import { Resend } from "resend";
 
-const mail = require('@sendgrid/mail');
+const resend = new Resend("re_QuKVzsgv_Eh97RcuAJgATe9GbbzJX5WPk");
 
-mail.setApiKey(process.env.SENDGRID_API_KEY);
+export default async (req, res) => {
+  try {
+    const info = JSON.parse(req.body);
+    const data = await resend.emails.send({
+      from: info.from,
+      to: info.to,
+      subject: info.subject,
+      react: EmailTemplate({
+        name: info.emailProps.name,
+        email: info.emailProps.email,
+        phone: info.emailProps.phone,
+        asunto: info.emailProps.asunto,
+        message: info.emailProps.message,
+      }),
+    });
 
-
-export default function handler(req, res) {
-  const body = JSON.parse(req.body)
-   
-  const message = `
-  Name: ${body.name}\r\n
-  Email: ${body.email}\r\n
-  Message: ${body.message}
-  `;
-   
-  const data = {
-    to: 'leocisal@gmail.com', // Change to your recipient
-  from: 'leocisal@gmail.com', // Change to your verified sender
-  subject: 'Web form message',
-  text: message,
-  html: message.replace(/\r\n/g, '<br>')
-  };
-  mail.send(data).then(()=>{
-    console.log('Email sent')
-  }).catch((error)=>{
-    console.log(error)
-  })
-
-
-} 
+    res.status(200).json(data);
+  } catch (error) {
+    res.status(400).json(error);
+  }
+};
