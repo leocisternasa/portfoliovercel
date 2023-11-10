@@ -24,7 +24,7 @@ function Main() {
           </div>
 
           <p className="py-4 text-gray-600 max-w-[70%] m-auto mt-14">
-            I`m a front-end web developer specializing in building exceptional
+            I'm a front-end web developer specializing in building exceptional
             digital experiences. Currently, I`m focusing on improving my
             front-end skills while learning back-end technologies
           </p>
