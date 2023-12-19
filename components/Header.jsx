@@ -16,11 +16,11 @@ function Header() {
           <div className="absolute top-[-220px] left-[-80px] -z-10 w-[350px] h-[350px] rounded-full bg-[#2fbf71] " />
           {/* <!-- Contenido principal del div --> */}
           <div className="flex flex-col items-center justify-center align-middle">
-            <div className="flex bg-yellow-500 border-[5px] border-white h-[120px] w-[120px] rounded-full  justify-center overflow-hidden mt-16">
+            <div className="flex bg-yellow-500 border-[5px] border-white lg:h-[100px] lg:w-[100px] rounded-full  justify-center overflow-hidden mt-16">
               <Image
                 src={perfil}
-                width={120}
-                height={120}
+                width={100}
+                height={100}
                 alt="Picture of Leonardo"
                 className=" self-center"
               />
@@ -32,7 +32,7 @@ function Header() {
         <ul className="py-[45px] flex flex-wrap" id="pp-menu">
           <li data-menuanchor="home" className="w-full">
             <a
-              className="px-[30px] py-[15px] block tracking-[3px] uppercase leading-4 text-xs"
+              className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
               href="#home"
             >
               <div className="flex space-x-4 items-center">
@@ -49,7 +49,7 @@ function Header() {
           </li>
           <li data-menuanchor="about" className="w-full">
             <a
-              className="px-[30px] py-[15px] block tracking-[3px] uppercase leading-4 text-xs"
+              className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
               href="#about"
             >
               <div className="flex space-x-4 items-center">
@@ -66,7 +66,7 @@ function Header() {
           </li>
           <li data-menuanchor="services" className="w-full">
             <a
-              className="px-[30px] py-[15px] block tracking-[3px] uppercase leading-4 text-xs"
+              className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
               href="#services"
             >
               <div className="flex space-x-4 items-center">
@@ -83,7 +83,7 @@ function Header() {
           </li>
           <li data-menuanchor="work" className="w-full">
             <a
-              className="px-[30px] py-[15px] block tracking-[3px] uppercase leading-4 text-xs"
+              className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
               href="#work"
             >
               <div className="flex space-x-4 items-center">
@@ -117,7 +117,7 @@ function Header() {
           </li> */}
           <li data-menuanchor="contactus" className="w-full">
             <a
-              className="px-[30px] py-[15px] block tracking-[3px] uppercase leading-4 text-xs"
+              className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
               href="#contactus"
             >
               <div className="flex space-x-4 items-center">
