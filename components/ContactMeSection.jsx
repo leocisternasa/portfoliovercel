@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
+import SectionTitle from './SectionTitle'
 
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
@@ -34,10 +35,7 @@ function ContactMeSection() {
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-          Contact
-        </p>
-        <h2 className="py-4">Get in Touch</h2>
+        <SectionTitle title={'CONTACT ME'} />
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
@@ -49,6 +47,7 @@ function ContactMeSection() {
                 /> */}
               </div>
               <div>
+                <h2 className="py-4">Get in Touch</h2>
                 <h2 className="py-2">Leonardo Cisternas</h2>
                 <p>Front-End Developer</p>
                 <p className="py-4">

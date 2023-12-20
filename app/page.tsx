@@ -8,6 +8,7 @@ import TestimonialsSection from '../components/SomethingElseSection'
 import PortfolioSection from '../components/PortfolioSection'
 import SomethingElseSection from '../components/SomethingElseSection'
 import ContactMeSection from '../components/ContactMeSection'
+import Projects from '../components/Projects'
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
             <Separator />
             <SomethingElseSection />
             <Separator />
-            <PortfolioSection />
+            <Projects />
             <Separator />
             <ContactMeSection />
           </div>
