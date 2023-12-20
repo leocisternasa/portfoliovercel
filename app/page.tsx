@@ -7,6 +7,7 @@ import ServicesSection from '../components/ServicesSection'
 import TestimonialsSection from '../components/SomethingElseSection'
 import PortfolioSection from '../components/PortfolioSection'
 import SomethingElseSection from '../components/SomethingElseSection'
+import ContactMeSection from '../components/ContactMeSection'
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
             <SomethingElseSection />
             <Separator />
             <PortfolioSection />
+            <Separator />
+            <ContactMeSection />
           </div>
         </div>
       </div>
