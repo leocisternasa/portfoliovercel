@@ -6,11 +6,19 @@ import aboutMeIcon from '../public/id-card.svg'
 import servicesIcon from '../public/services.svg'
 import portfolioIcon from '../public/briefcase-portfolio.svg'
 import contactIcon from '../public/contact-laptop.svg'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { AiOutlineMail } from 'react-icons/ai'
+import Link from 'next/link'
+import HomeIcon from './HomeIcon'
+import ServiceIcon from './ServiceIcon'
+import PortfolioIcon from './PortfolioIcon'
+import ContactMeIcon from './ContactMeIcon'
+import AboutMeIcon from './AboutMeIcon'
 
 function Header() {
   return (
     <>
-      <div className="bg-[#0c0c14] lg:w-[250px] fixed top-0 bottom-0 border-2 border-red-600 -z-10">
+      <div className="bg-[#0c0c14] lg:w-[250px] fixed top-0 bottom-0 -z-10">
         <div className="relative">
           {/* <!-- semicirculo background --> */}
           <div className="absolute top-[-220px] left-[-80px] -z-10 w-[350px] h-[350px] rounded-full bg-[#2fbf71] " />
@@ -35,14 +43,8 @@ function Header() {
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
               href="#home"
             >
-              <div className="flex space-x-4 items-center">
-                <Image
-                  src={homeIcon}
-                  height={30}
-                  width={27}
-                  alt="Icono con forma de casa"
-                />
-
+              <div className="green-stroke hover:text-[#2fbf71] flex space-x-4 items-center">
+                <HomeIcon />
                 <span>Home</span>
               </div>
             </a>
@@ -52,14 +54,8 @@ function Header() {
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
               href="#about"
             >
-              <div className="flex space-x-4 items-center">
-                <Image
-                  src={aboutMeIcon}
-                  height={30}
-                  width={27}
-                  alt="Icono con forma de casa"
-                />
-
+              <div className="green-fill hover:text-[#2fbf71] flex space-x-4 items-center">
+                <AboutMeIcon />
                 <span>About Me</span>
               </div>
             </a>
@@ -69,14 +65,8 @@ function Header() {
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
               href="#services"
             >
-              <div className="flex space-x-4 items-center">
-                <Image
-                  src={servicesIcon}
-                  height={30}
-                  width={27}
-                  alt="Icono con forma de casa"
-                />
-
+              <div className="green-stroke hover:text-[#2fbf71] flex space-x-4 items-center">
+                <ServiceIcon />
                 <span>Services</span>
               </div>
             </a>
@@ -86,14 +76,8 @@ function Header() {
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
               href="#work"
             >
-              <div className="flex space-x-4 items-center">
-                <Image
-                  src={portfolioIcon}
-                  height={30}
-                  width={27}
-                  alt="Icono con forma de casa"
-                />
-
+              <div className="green-fill hover:text-[#2fbf71] flex space-x-4 items-center">
+                <PortfolioIcon />
                 <span>Portfolio</span>
               </div>
             </a>
@@ -120,21 +104,37 @@ function Header() {
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
               href="#contactus"
             >
-              <div className="flex space-x-4 items-center">
-                <Image
-                  src={contactIcon}
-                  height={30}
-                  width={27}
-                  alt="Icono con forma de casa"
-                />
-
+              <div className="green-fill hover:text-[#2fbf71] flex space-x-4 items-center">
+                <ContactMeIcon />
                 <span>Contact Me</span>
               </div>
             </a>
           </li>
         </ul>
         <div className="absolute bottom-0 right-0 left-0 px-0 py-3">
-          social media icons
+          <div className="flex items-center justify-around py-4 w-[80%]">
+            <Link
+              href="https://www.linkedin.com/in/leonardo-cisternas/"
+              target="_blank"
+            >
+              <div className=" cursor-pointer">
+                <FaLinkedinIn className="h-auto w-[15px] hover:text-green-500 ease-in duration-200 " />
+              </div>
+            </Link>
+            <Link href="https://github.com/leocisternasa" target="_blank">
+              <div className=" cursor-pointer">
+                <FaGithub className="h-auto w-[15px] hover:text-green-500 ease-in duration-200" />
+              </div>
+            </Link>
+            <Link href="#contact">
+              <div className=" cursor-pointer">
+                <AiOutlineMail className="h-auto w-[15px] hover:text-green-500 ease-in duration-200" />
+              </div>
+            </Link>
+            {/* <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <BsFillPersonLinesFill />
+                  </div> */}
+          </div>
         </div>
       </div>
     </>

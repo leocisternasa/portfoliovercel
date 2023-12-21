@@ -10,7 +10,7 @@ function EducationSkills() {
         <SectionTitle title={'EDUCATION & SKILLS'} />
       </div>
       <div className="flex flex-wrap mx-[-15px] justify-center items-center">
-        <div className="border-2 border-green-900 relative w-full px-4 lg:max-w-[33.5%] lg:basis-1/3 mt-4 pb-4">
+        <div className=" relative w-full px-4 lg:max-w-[33.5%] lg:basis-1/3 mt-4 pb-4">
           <ul className=" m-0 p-0 bg-[#0b0b13] list-none h-full">
             <Experiencia
               year={'2012-2023'}
@@ -34,7 +34,7 @@ function EducationSkills() {
             />
           </ul>
         </div>
-        <div className="border-2 border-red-900 relative w-full px-4 lg:max-w-[58.3%] lg:basis-2/3 mt-4 pb-4 h-auto mb-[21px]">
+        <div className=" relative w-full px-4 lg:max-w-[58.3%] lg:basis-2/3 mt-4 pb-4 h-auto mb-[21px]">
           <div className=" block">
             <h3 className=" font-medium leading-5 text-2xl pb-4">My Skills</h3>
             <p className=" mt-0 mb-4 pb-2 ">

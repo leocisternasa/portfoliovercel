@@ -7,11 +7,11 @@ function AboutMe() {
   return (
     <>
       <div className="flex flex-wrap mx-[-15px] justify-center items-center">
-        <div className="border-2 border-green-900 relative w-full px-4 lg:max-w-[50%] lg:basis-2/4 mt-4 pb-4">
+        <div className="relative w-full px-4 lg:max-w-[50%] lg:basis-2/4 mt-4 pb-4">
           <div>Imagen de About ME</div>
         </div>
 
-        <div className="border-2 border-rose-900 relative w-full px-4 lg:max-w-[50%] lg:basis-2/4 mt-4 pb-4">
+        <div className="relative w-full px-4 lg:max-w-[50%] lg:basis-2/4 mt-4 pb-4">
           <SectionTitle title={'ABOUT ME.'} />
           <h3 className="mt-0 leading-8 font-medium text-[1.75rem] mb-6 text-white">
             I&#39;m a Freelancer Front-end Developer with over 3 years of
