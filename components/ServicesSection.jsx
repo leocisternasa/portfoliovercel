@@ -11,7 +11,7 @@ function ServicesSection() {
       <div className=" lg:w-[950px] lg:max-w-[1440px] px-4 mx-auto">
         <SectionTitle title={'WHAT I DO'} />
       </div>
-      <div className=" flex flex-wrap mx-[-15px]">
+      <div className=" flex flex-wrap mx-[-15px] flex-col sm:flex-row">
         <ServiceCard />
         <ServiceCard />
         <ServiceCard />

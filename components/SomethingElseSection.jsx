@@ -60,7 +60,7 @@ const SomethingElseSection = () => {
         }}
       >
         <swiper-slide>
-          <div className=" w-[447.5px] mr-6 bg-black ml-60 mt-5">
+          <div className=" w-[447.5px] sm:mr-6 bg-black sm:ml-60 mt-5">
             <div className="avatar">IMagen 1</div>
             <div className="media-body">
               <p>
@@ -74,7 +74,7 @@ const SomethingElseSection = () => {
           </div>
         </swiper-slide>
         <swiper-slide>
-          <div className=" w-[447.5px] mr-10 bg-black ml-60 mt-5">
+          <div className=" w-[447.5px] sm:mr-10 bg-black sm:ml-60 mt-5">
             <div className="avatar">IMagen 2</div>
             <div className="media-body">
               <p>
@@ -88,7 +88,7 @@ const SomethingElseSection = () => {
           </div>
         </swiper-slide>
         <swiper-slide>
-          <div className="w-[447.5px] mr-6 bg-black ml-60 mt-5">
+          <div className="w-[447.5px] sm:mr-6 bg-black sm:ml-60 mt-5">
             <div className="avatar">IMagen 3</div>
             <div className="media-body">
               <p>
