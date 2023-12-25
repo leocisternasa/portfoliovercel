@@ -6,7 +6,7 @@ import SectionTitle from './SectionTitle'
 function AboutMe() {
   return (
     <>
-      <div className="flex flex-wrap mx-[-15px] justify-center items-center">
+      <div className="sm:flex flex-wrap mx-[-15px] justify-center items-center hidden ">
         <div className="relative w-full px-4 lg:max-w-[50%] lg:basis-2/4 mt-4 pb-4">
           <div>Imagen de About ME</div>
         </div>

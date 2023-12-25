@@ -8,9 +8,9 @@ function HeroSection() {
   return (
     <section
       id="HeroSection"
-      className="py-[100px]  min-h-[100vh] flex items-center flex-wrap mx-[-15px]"
+      className=" pt-[100px] sm:py-[100px]  min-h-[100vh] flex items-center flex-wrap mx-[-15px]"
     >
-      <div className="basis-1/2 max-w-[50%] relative px-4 w-full">
+      <div className="basis-1/2 sm:max-w-[50%] relative px-4 w-full">
         <div className="py-10">
           <h6 className="text-white pb-5 text-2xl font-medium">Hello, I am</h6>
           <h1 className="text-white text-6xl font-bold pb-5">
@@ -31,7 +31,7 @@ function HeroSection() {
           <AnimatedBorder text={'Download Cv'} width={'270px'} />
         </div>
       </div>
-      <div className=" basis-1/2 max-w-[50%] relative px-4 w-full">
+      <div className=" sm:basis-1/2 sm:max-w-[50%] relative px-4 w-full">
         <div className="flex bg-[#2fbf71]  lg:h-[450px] lg:w-[450px] rounded-full  justify-center overflow-hidden mb-20">
           <Image
             src={perfil}
