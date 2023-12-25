@@ -4,7 +4,10 @@ import ServiceCard from './ServiceCard'
 
 function ServicesSection() {
   return (
-    <div className=" bg-[#10101a] overflow-hiden py-[100px] block ">
+    <div
+      id="services"
+      className=" bg-[#10101a] overflow-hiden py-[100px] block "
+    >
       <div className=" lg:w-[950px] lg:max-w-[1440px] px-4 mx-auto">
         <SectionTitle title={'WHAT I DO'} />
       </div>

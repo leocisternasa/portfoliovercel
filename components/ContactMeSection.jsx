@@ -33,7 +33,7 @@ function ContactMeSection() {
     })
   }
   return (
-    <div id="contact" className="w-full lg:h-full">
+    <div id="contactMe" className="w-full lg:h-full">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <SectionTitle title={'CONTACT ME'} />
         <div className="grid lg:grid-cols-5 gap-8">

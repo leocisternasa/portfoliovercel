@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import React from 'react'
 import perfil from '../public/img/perfil.png'
@@ -7,7 +9,7 @@ import servicesIcon from '../public/services.svg'
 import portfolioIcon from '../public/briefcase-portfolio.svg'
 import contactIcon from '../public/contact-laptop.svg'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { AiOutlineMail } from 'react-icons/ai'
+import { AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import Link from 'next/link'
 import HomeIcon from './HomeIcon'
 import ServiceIcon from './ServiceIcon'
@@ -16,10 +18,31 @@ import ContactMeIcon from './ContactMeIcon'
 import AboutMeIcon from './AboutMeIcon'
 
 function Header() {
+  const [menuOpen, setMenuOpen] = React.useState(false)
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
   return (
     <>
-      <div className="bg-[#0c0c14] lg:w-[250px] fixed top-0 bottom-0 -z-10">
+      <div
+        className=" w-full h-10 flex justify-end items-end z-[100] sm:hidden"
+        onClick={toggleMenu}
+      >
+        <div className=" mr-4">
+          <AiOutlineMenu size={25} />
+        </div>
+      </div>
+      <div
+        className={
+          menuOpen
+            ? 'bg-[#0c0c14] w-[250px] fixed top-0 bottom-0 sm:-z-10 z-[100] left-0 ease-in-out duration-500'
+            : 'bg-[#0c0c14] w-[250px] fixed top-0 bottom-0 sm:-z-10 z-[100] left-[-350px] sm:left-0 ease-out duration-500'
+        }
+      >
         <div className="relative">
+          {' '}
+          {/* <!-- Foto Avatar pequeñs --> */}
           {/* <!-- semicirculo background --> */}
           <div className="absolute top-[-220px] left-[-80px] -z-10 w-[350px] h-[350px] rounded-full bg-[#2fbf71] " />
           {/* <!-- Contenido principal del div --> */}
@@ -38,10 +61,10 @@ function Header() {
         </div>
         {/* <div className="border-2 border-lime-50">Menu</div> */}
         <ul className="py-[45px] flex flex-wrap" id="pp-menu">
-          <li data-menuanchor="home" className="w-full">
+          <li data-menuanchor="home" className="w-full" onClick={toggleMenu}>
             <a
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
-              href="#home"
+              href="#HeroSection"
             >
               <div className="green-stroke hover:text-[#2fbf71] flex space-x-4 items-center">
                 <HomeIcon />
@@ -49,10 +72,10 @@ function Header() {
               </div>
             </a>
           </li>
-          <li data-menuanchor="about" className="w-full">
+          <li data-menuanchor="about" className="w-full" onClick={toggleMenu}>
             <a
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
-              href="#about"
+              href="#aboutMe"
             >
               <div className="green-fill hover:text-[#2fbf71] flex space-x-4 items-center">
                 <AboutMeIcon />
@@ -60,7 +83,11 @@ function Header() {
               </div>
             </a>
           </li>
-          <li data-menuanchor="services" className="w-full">
+          <li
+            data-menuanchor="services"
+            className="w-full"
+            onClick={toggleMenu}
+          >
             <a
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
               href="#services"
@@ -71,10 +98,10 @@ function Header() {
               </div>
             </a>
           </li>
-          <li data-menuanchor="work" className="w-full">
+          <li data-menuanchor="work" className="w-full" onClick={toggleMenu}>
             <a
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
-              href="#work"
+              href="#projects"
             >
               <div className="green-fill hover:text-[#2fbf71] flex space-x-4 items-center">
                 <PortfolioIcon />
@@ -99,10 +126,14 @@ function Header() {
               </div>
             </a>
           </li> */}
-          <li data-menuanchor="contactus" className="w-full">
+          <li
+            data-menuanchor="contactus"
+            className="w-full"
+            onClick={toggleMenu}
+          >
             <a
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
-              href="#contactus"
+              href="#contactMe"
             >
               <div className="green-fill hover:text-[#2fbf71] flex space-x-4 items-center">
                 <ContactMeIcon />
@@ -111,6 +142,7 @@ function Header() {
             </a>
           </li>
         </ul>
+        {/* <!-- Barra redes sociales --> */}
         <div className="absolute bottom-0 right-0 left-0 px-0 py-3">
           <div className="flex items-center justify-around py-4 w-[80%]">
             <Link
