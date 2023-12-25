@@ -147,7 +147,7 @@ function ContactMeSection() {
           </div>
         </div>
         <div className="flex justify-center py-12">
-          <Link href="#HeroSection">
+          <Link href="#mobile-menu">
             <div className="rounded-full shadow-l p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-black">
               <HiOutlineChevronDoubleUp
                 className="text-white hover:text-[#2fbf71]"

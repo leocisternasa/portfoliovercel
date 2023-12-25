@@ -26,10 +26,11 @@ function Header() {
   return (
     <>
       <div
-        className=" w-full h-10 flex justify-end items-end z-[100] sm:hidden"
+        id="mobile-menu"
+        className=" w-full h-16 flex justify-end items-end z-[100] sm:hidden fixed bg-black"
         onClick={toggleMenu}
       >
-        <div className=" mr-4">
+        <div className=" mr-4 mb-4">
           <AiOutlineMenu size={25} />
         </div>
       </div>
@@ -64,7 +65,7 @@ function Header() {
           <li data-menuanchor="home" className="w-full" onClick={toggleMenu}>
             <a
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
-              href="#HeroSection"
+              href="#mobile-menu"
             >
               <div className="green-stroke hover:text-[#2fbf71] flex space-x-4 items-center">
                 <HomeIcon />
