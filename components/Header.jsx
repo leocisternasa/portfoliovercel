@@ -36,8 +36,8 @@ function Header() {
       <div
         className={
           menuOpen
-            ? 'bg-[#0c0c14] w-[250px] fixed top-0 bottom-0 sm:-z-10 z-[100] left-0 ease-in-out duration-500'
-            : 'bg-[#0c0c14] w-[250px] fixed top-0 bottom-0 sm:-z-10 z-[100] left-[-350px] sm:left-0 ease-out duration-500'
+            ? 'bg-[#0c0c14] w-[250px] fixed top-0 bottom-0 sm:-z-10 z-[100] left-0 ease-in duration-500'
+            : 'bg-[#0c0c14] w-[250px] fixed top-0 bottom-0 sm:-z-10 z-[100] left-[-350px] sm:left-0 ease-in duration-500'
         }
       >
         <div className="relative">
