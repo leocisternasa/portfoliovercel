@@ -6,15 +6,15 @@ import SectionTitle from './SectionTitle'
 function AboutMe() {
   return (
     <>
-      <div className="sm:flex flex-wrap mx-[-15px] justify-center items-center hidden ">
-        <div className="relative w-full px-4 lg:max-w-[50%] lg:basis-2/4 mt-4 pb-4">
+      <div
+        id="about-me"
+        className="sm:flex flex-wrap mx-[-15px] justify-center items-center border-2 border-red-500"
+      >
+        <div className="relative hidden sm:flex w-full px-4 lg:max-w-[50%] lg:basis-2/4 mt-4 pb-4">
           <div>Imagen de About ME</div>
         </div>
 
-        <div
-          id="aboutMe"
-          className="relative w-full px-4 lg:max-w-[50%] lg:basis-2/4 mt-4 pb-4"
-        >
+        <div className="relative w-full px-4 lg:max-w-[50%] lg:basis-2/4 mt-4 pb-4">
           <SectionTitle title={'ABOUT ME.'} />
           <h3 className="mt-0 leading-8 font-medium text-[1.75rem] mb-6 text-white">
             I&#39;m a Freelancer Front-end Developer with over 3 years of
@@ -49,7 +49,7 @@ function AboutMe() {
                 </div>
               </div>
             </div>
-            <div className=" flex">
+            <div className=" flex flex-col sm:flex-row ml-8 sm:ml-0">
               <AnimatedBorder text={'Contact Me'} width={'175px'} />
               <AnimatedBorder text={'Portfolio'} width={'175px'} />
             </div>

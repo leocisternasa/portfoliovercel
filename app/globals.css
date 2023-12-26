@@ -74,6 +74,12 @@ body {
 .green-fill:hover svg {
   fill: #2fbf71;
 }
+
+@media screen and (max-width: 600px) {
+  .container article {
+    width: 270px !important;
+  }
+}
 article {
   --active: 0.15;
   --start: 0;

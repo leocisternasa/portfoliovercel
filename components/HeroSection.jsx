@@ -7,7 +7,7 @@ import AnimatedBorder from './animatedBorder/AnimatedBorder'
 function HeroSection() {
   return (
     <section
-      id="HeroSection"
+      id="heroSection"
       className=" pt-[100px] sm:py-[100px]  min-h-[100vh] flex items-center flex-wrap mx-[-15px]"
     >
       <div className="basis-1/2 sm:max-w-[50%] relative px-4 w-full">

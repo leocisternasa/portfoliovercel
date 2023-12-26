@@ -65,7 +65,7 @@ function Header() {
           <li data-menuanchor="home" className="w-full" onClick={toggleMenu}>
             <a
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
-              href="#mobile-menu"
+              href="#heroSection"
             >
               <div className="green-stroke hover:text-[#2fbf71] flex space-x-4 items-center">
                 <HomeIcon />
@@ -76,7 +76,7 @@ function Header() {
           <li data-menuanchor="about" className="w-full" onClick={toggleMenu}>
             <a
               className="px-[30px] py-[10px] block tracking-[3px] uppercase leading-4 text-xs"
-              href="#aboutMe"
+              href="#about-me"
             >
               <div className="green-fill hover:text-[#2fbf71] flex space-x-4 items-center">
                 <AboutMeIcon />
