@@ -1,7 +1,11 @@
 'use client'
 
 import React from 'react'
-import { TERipple } from 'tw-elements-react'
+import dynamic from 'next/dynamic'
+
+const TERipple = dynamic(() =>
+  import('tw-elements-react').then((res) => res.TERipple)
+)
 
 function ModalButton({ setShowModal }) {
   return (

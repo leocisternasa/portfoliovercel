@@ -1,14 +1,31 @@
 'use client'
 
-import {
-  TERipple,
-  TEModal,
-  TEModalDialog,
-  TEModalContent,
-  TEModalHeader,
-  TEModalBody,
-  TEModalFooter,
-} from 'tw-elements-react'
+import dynamic from 'next/dynamic'
+
+const TEModal = dynamic(() =>
+  import('tw-elements-react').then((res) => res.TEModal)
+)
+const TERipple = dynamic(() =>
+  import('tw-elements-react').then((res) => res.TERipple)
+)
+
+const TEModalDialog = dynamic(() =>
+  import('tw-elements-react').then((res) => res.TEModalDialog)
+)
+const TEModalContent = dynamic(() =>
+  import('tw-elements-react').then((res) => res.TEModalContent)
+)
+
+const TEModalHeader = dynamic(() =>
+  import('tw-elements-react').then((res) => res.TEModalHeader)
+)
+const TEModalBody = dynamic(() =>
+  import('tw-elements-react').then((res) => res.TEModalBody)
+)
+
+const TEModalFooter = dynamic(() =>
+  import('tw-elements-react').then((res) => res.TEModalFooter)
+)
 
 export default function BasicExample({ showModal, setShowModal }) {
   return (
