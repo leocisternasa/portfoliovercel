@@ -4,7 +4,7 @@
 import React, { useEffect } from 'react'
 import Link from 'next/link'
 
-const AnimatedBorder = ({ text, width }) => {
+const AnimatedBorder = ({ text, width, href, isDownload }) => {
   useEffect(() => {
     const CONFIG = {
       proximity: 40,
@@ -74,10 +74,10 @@ const AnimatedBorder = ({ text, width }) => {
   return (
     <div className="container">
       <a
-        href={'/Resume_Leonardo.pdf'}
-        target="_blank"
+        href={href}
+        target="_self"
         rel="noopener noreferrer"
-        download
+        download={isDownload}
         className="absolute z-10 top-[50px] transition-all duration-300 text-white hover:text-green-500 font-medium"
       >
         {text}

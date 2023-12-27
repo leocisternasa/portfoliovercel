@@ -8,7 +8,7 @@ function HeroSection() {
   return (
     <section
       id="heroSection"
-      className=" pt-[100px] sm:py-[100px]  min-h-[100vh] flex items-center flex-wrap mx-[-15px]"
+      className=" pt-12 sm:pb-[100px]  min-h-[100vh] flex items-center flex-wrap mx-[-15px]"
     >
       <div className="basis-1/2 sm:max-w-[50%] relative px-4 w-full">
         <div className="py-10">
@@ -18,17 +18,22 @@ function HeroSection() {
           </h1>
           <div className="mb-4">
             <span className="text-white text-lg font-semibold">
-              Una malaya{' '}
+              I Am Passionate{' '}
             </span>
             <TypingAnimation />
           </div>
           <p className="text-white text-lg max-w-md mt-0 mb-4">
-            I design and develop services for customers <br /> of all sizes,
-            specializing in creating stylish, modern websites, web services and
-            online stores.
+            {' '}
+            I&apos;m a full-stack web developer specializing in building digital
+            solutions and experiences focused on customer&apos;s needs.
           </p>
 
-          <AnimatedBorder text={'Download Cv'} width={'270px'} />
+          <AnimatedBorder
+            text={'Download Cv'}
+            width={'270px'}
+            href={'/Resume_Leonardo.pdf'}
+            isDownload={true}
+          />
         </div>
       </div>
       <div className=" sm:basis-1/2 sm:max-w-[50%] relative px-4 w-full">

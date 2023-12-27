@@ -8,7 +8,12 @@ const TypingAnimation = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['puta', 'perra', 'bastarda'], // Strings to display
+      strings: [
+        'Full-Stack Dev',
+        'Freelancer',
+        'Tech Enthusiast',
+        'Tech Explorer',
+      ], // Strings to display
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 100,
