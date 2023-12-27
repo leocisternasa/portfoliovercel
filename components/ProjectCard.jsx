@@ -6,10 +6,10 @@ import React from 'react'
 
 import dynamic from 'next/dynamic'
 
-const ProjectModal = dynamic(() => import('../pages/ProjectModal'), {
+const ProjectModal = dynamic(() => import('./ProjectModal'), {
   ssr: false,
 })
-const ModalButton = dynamic(() => import('../pages/ModalButton'), {
+const ModalButton = dynamic(() => import('./ModalButton'), {
   ssr: false,
 })
 
