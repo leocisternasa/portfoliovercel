@@ -4,12 +4,9 @@ import Separator from '@/components/Separator'
 import EducationSkills from '../components/EducationSkills'
 import ExperienceSection from '../components/ExperienceSection'
 import ServicesSection from '../components/ServicesSection'
-import TestimonialsSection from '../components/SomethingElseSection'
 import SomethingElseSection from '../components/SomethingElseSection'
 import ContactMeSection from '../components/ContactMeSection'
 import Projects from '../components/Projects'
-import ProjectModal from '../components/ProjectModal'
-import HomeIcon from '@/components/HomeIcon'
 
 export default function Home() {
   return (

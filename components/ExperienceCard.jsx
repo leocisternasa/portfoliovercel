@@ -8,6 +8,7 @@ function ExperienceCard({
   workDescription,
   workFunctions,
   companyLogo,
+  stack,
 }) {
   return (
     <div className=" p-9 ">
@@ -27,10 +28,21 @@ function ExperienceCard({
             <h6 className=" mb-1 font-medium text-xl text-white">{position}</h6>
             <label
               htmlFor="Role description"
-              className=" mb-3 text-xs inline-block"
+              className=" mb-2 text-xs inline-block"
             >
               {company}
             </label>
+            <div className="mb-4 flex gap-1">
+              {stack &&
+                stack.map((stackItem, index) => (
+                  <span
+                    key={index}
+                    className={`inline-flex items-center rounded-md bg-${stackItem[1]}-500/10 px-2 py-1 text-xs font-medium text-${stackItem[1]}-400 ring-1 ring-inset ring-${stackItem[1]}-500/20`}
+                  >
+                    {stackItem[0]}
+                  </span>
+                ))}
+            </div>
             <div className=" inline-block py-1 px-2 text-white bg-[#2fbf71] text-xs font-light uppercase tracking-wide absolute top-0 right-0">
               {schedule}
             </div>
@@ -43,12 +55,6 @@ function ExperienceCard({
                   <li key={index}>{functionItem}</li>
                 ))}
             </ul>
-
-            <div>
-              <span className="inline-flex items-center rounded-md bg-green-500/10 px-2 py-1 text-xs font-medium text-green-400 ring-1 ring-inset ring-green-500/20">
-                React
-              </span>
-            </div>
           </div>
         </div>
       </div>

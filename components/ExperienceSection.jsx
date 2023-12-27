@@ -23,7 +23,13 @@ function ExperienceSection() {
         'Creation of a responsive Main Page and contact forms, including navigation bars.',
       ],
       companyLogo: benchapalLogo,
-      stack: ['ReactJS', 'NextJS', 'Tailwind', 'Stripe', 'Firebase'],
+      stack: [
+        ['ReactJS', 'green'],
+        ['NextJS', 'purple'],
+        ['Tailwind', 'pink'],
+        ['Stripe', 'blue'],
+        ['Firebase', 'orange'],
+      ],
     },
     {
       position: 'Front-end Developer Intern / Practice',
@@ -39,7 +45,12 @@ function ExperienceSection() {
         'Creation of functions and algorithms. Code modularization and adherence to best practices.',
       ],
       companyLogo: docmoviLogo,
-      stack: [['ReactJS', 'green'], ['MeteorJS'], ['CSS-Modules'], ['MongoDB']],
+      stack: [
+        ['ReactJS', 'green'],
+        ['MeteorJS', 'teal'],
+        ['CSS-Modules', 'indigo'],
+        ['MongoDB', 'red'],
+      ],
     },
     {
       position: 'Lead Dentist Surgeon',
@@ -60,7 +71,12 @@ function ExperienceSection() {
         "Currently building a website for a specialized orthodontic clinic and integrating it with various services according to the client's requirements",
       ],
       companyLogo: freelanceLogo,
-      stack: ['ReactJS', 'NextJS', 'Tailwind', 'PostgreSQL'],
+      stack: [
+        ['ReactJS', 'green'],
+        ['NextJS', 'purple'],
+        ['Tailwind', 'pink'],
+        ['PostgreSQL', 'cyan'],
+      ],
     },
   ]
   return (
@@ -76,6 +92,7 @@ function ExperienceSection() {
           workDescription={experience[3].workDescription}
           workFunctions={experience[3].workFunctions}
           companyLogo={experience[3].companyLogo}
+          stack={experience[3].stack}
         />
         <ExperienceCard
           position={experience[0].position}
@@ -84,6 +101,7 @@ function ExperienceSection() {
           workDescription={experience[0].workDescription}
           workFunctions={experience[0].workFunctions}
           companyLogo={experience[0].companyLogo}
+          stack={experience[0].stack}
         />
         <ExperienceCard
           position={experience[1].position}
@@ -92,6 +110,7 @@ function ExperienceSection() {
           workDescription={experience[1].workDescription}
           workFunctions={experience[1].workFunctions}
           companyLogo={experience[1].companyLogo}
+          stack={experience[1].stack}
         />
         <ExperienceCard
           position={experience[2].position}
