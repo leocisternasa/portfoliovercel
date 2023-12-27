@@ -1,3 +1,5 @@
+'use client'
+
 import {
   TERipple,
   TEModal,
@@ -14,8 +16,8 @@ export default function BasicExample({ showModal, setShowModal }) {
       {/* <!-- Button trigger modal --> */}
 
       {/* <!-- Modal --> */}
-      <TEModal show={showModal} setShow={setShowModal}>
-        <TEModalDialog>
+      <TEModal show={showModal} setShow={setShowModal} scrollable>
+        <TEModalDialog centered>
           <TEModalContent>
             <TEModalHeader>
               {/* <!--Modal title--> */}
@@ -46,7 +48,29 @@ export default function BasicExample({ showModal, setShowModal }) {
               </button>
             </TEModalHeader>
             {/* <!--Modal body--> */}
-            <TEModalBody>Modal body text goes here.</TEModalBody>
+            <TEModalBody>
+              <p>
+                This is some placeholder content to show a vertically centered
+                modal. We&apos;ve added some extra copy here to show how
+                vertically centering the modal works when combined with
+                scrollable modals. We also use some repeated line breaks to
+                quickly extend the height of the content, thereby triggering the
+                scrolling. When content becomes longer than the predefined
+                max-height of modal, content will be cropped and scrollable
+                within the modal.
+              </p>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <p>Just like that.</p>
+            </TEModalBody>
             <TEModalFooter>
               <TERipple rippleColor="light">
                 <button

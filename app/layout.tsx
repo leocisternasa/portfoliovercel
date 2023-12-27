@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Header from '../components/Header'
 import './globals.css'
+import { Roboto } from 'next/font/google'
+import 'tw-elements-react/dist/css/tw-elements-react.min.css'
+const roboto = Roboto({ weight: '400', subsets: ['latin'] })
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <Header />
         {children}
       </body>

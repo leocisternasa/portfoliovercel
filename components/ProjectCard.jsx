@@ -3,8 +3,15 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import ProjectModal from './ProjectModal'
-import ModalButton from './ModalButton'
+
+import dynamic from 'next/dynamic'
+
+const ProjectModal = dynamic(() => import('../pages/ProjectModal'), {
+  ssr: false,
+})
+const ModalButton = dynamic(() => import('../pages/ModalButton'), {
+  ssr: false,
+})
 
 function ProjectCard({ title, backgroundImg, projectUrl, stack }) {
   const [showModal, setShowModal] = useState(false)
