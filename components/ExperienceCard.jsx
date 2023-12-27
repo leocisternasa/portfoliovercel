@@ -13,7 +13,7 @@ function ExperienceCard({
   return (
     <div className=" p-9 ">
       <div className="flex flex-wrap mx-[-15px]">
-        <div className=" md:max-w-[16.7%] md:basis-[16.7%] px-4 w-full relative">
+        <div className=" md:max-w-[16.7%] md:basis-[16.7%] px-4 w-full relative mb-8 sm:mb-0">
           <div className=" md:border-r-[1px] md:border-r-slate-700 md:border-solid min-h-full text-center">
             <Image
               src={companyLogo}
@@ -43,7 +43,7 @@ function ExperienceCard({
                   </span>
                 ))}
             </div>
-            <div className=" inline-block py-1 px-2 text-white bg-[#2fbf71] text-xs font-light uppercase tracking-wide absolute top-0 right-0">
+            <div className=" inline-block py-1 px-2 text-white bg-[#2fbf71] text-xs font-light uppercase tracking-wide absolute -top-14 sm:top-0 right-0">
               {schedule}
             </div>
             <p className=" max-w-[80%] mb-3 mt-0 font-medium">
