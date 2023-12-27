@@ -22,7 +22,7 @@ function Header() {
     <>
       <div
         id="mobile-menu"
-        className=" w-full h-16 flex justify-end items-end z-[100] sm:hidden fixed bg-black"
+        className=" w-full h-16 flex justify-end items-end z-[100] sm:hidden sm:-top-80 fixed bg-black"
         onClick={toggleMenu}
       >
         <div className=" mr-4 mb-4">
