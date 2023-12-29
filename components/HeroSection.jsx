@@ -10,7 +10,7 @@ function HeroSection() {
       id="heroSection"
       className=" pt-12 sm:pb-[100px]  min-h-[100vh] flex items-center flex-wrap mx-[-15px]"
     >
-      <div className="basis-1/2 sm:max-w-[50%] relative px-4 w-full">
+      <div className="sm-basis-1/2 sm:max-w-[50%] relative px-4 w-full">
         <div className="py-10">
           <h6 className="text-white pb-5 text-2xl font-medium">Hello, I am</h6>
           <h1 className="text-white text-6xl font-bold pb-5">
