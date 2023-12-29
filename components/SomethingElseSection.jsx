@@ -4,10 +4,17 @@ import { useRef, useEffect } from 'react'
 import { register } from 'swiper/element/bundle'
 import SectionTitle from './SectionTitle'
 import Swiper from 'swiper'
+import Image from 'next/image'
+import dentistIcon from '../public/dentist.png'
+import { FaReact } from 'react-icons/fa'
+import devIcon from '../public/javascript-flatline.png'
+import devIcon2 from '../public/code-development-two-color.png'
+import goalIcon from '../public/achievement-isometric.png'
+import goalIcon2 from '../public/motivation-isometric-50064.png'
 
 register()
 
-const SomethingElseSection = () => {
+const SomethingElseSection = ({ simethingElseImage, SomethingElseText }) => {
   const swiperElRef = useRef(null)
 
   useEffect(() => {
@@ -59,45 +66,90 @@ const SomethingElseSection = () => {
           '--swiper-pagination-top': 'auto',
         }}
       >
-        <swiper-slide style={{ marginLeft: '10px' }}>
-          <div className=" w-[340px] sm:w-[447.5px] sm:mr-6 bg-black sm:ml-60 mt-5">
-            <div className="avatar">IMagen 1</div>
-            <div className="media-body">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the {`industry's`} standard dummy
-                text ever since the 1500s.
+        <swiper-slide>
+          <div className="max-w-full w-[340px] sm:w-[647.5px] sm:mx-auto bg-[#01ADC7] mt-5 rounded-md">
+            <div className="flex justify-center items-center relative">
+              <div>
+                <Image
+                  src={dentistIcon}
+                  height={250}
+                  width={250}
+                  alt="Imagen de la seccion something else about me"
+                />
+              </div>
+              <div className=" text-black absolute ml-10 mt-4">
+                <FaReact />
+              </div>
+            </div>
+            <div className="media-body p-4 h-[200px] sm:h-[125px] ">
+              <p className="px-4 pb-4 font-semibold ">
+                With 6 years of experience as a dentist, I have led dental
+                teams, coordinated the procurement of medications and supplies,
+                and managed the acquisition of cutting-edge technologies for the
+                dental field.
               </p>
-              <h6>Jennifer Lutheran</h6>
-              <span>CEO at pxdraft</span>
             </div>
           </div>
         </swiper-slide>
         <swiper-slide>
-          <div className=" w-[340px] sm:w-[447.5px] sm:mr-10 bg-black sm:ml-60 mt-5">
-            <div className="avatar">IMagen 2</div>
-            <div className="media-body">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the {`industry's`} standard dummy
-                text ever since the 1500s.
+          <div className=" max-w-full w-[340px] sm:w-[647.5px] sm:mx-auto bg-[#8B80F9] mt-5 rounded-md">
+            <div className="flex justify-center items-baseline align-bottom mt-4 px-4 pb-0 pt-4">
+              <div className="mt-4">
+                <Image
+                  src={devIcon}
+                  height={200}
+                  width={200}
+                  alt="Imagen de la seccion something else about me"
+                />
+              </div>
+              <div className="mt-4">
+                <Image
+                  src={devIcon2}
+                  height={200}
+                  width={200}
+                  alt="Imagen de la seccion something else about me"
+                />
+              </div>
+            </div>
+            <div className="media-body px-4 pb-4 pt-4 ">
+              <p className="px-4 pb-4 pt-0 font-semibold h-[200px] sm:h-[110px]">
+                Fueled by curiosity and a passion for technological
+                advancements, I embarked on a professional reinvention. I
+                completed courses and bootcamps in web development, starting
+                with frontend and currently wrapping up a full-stack program,
+                gaining insights into both frontend and backend technologies.
               </p>
-              <h6>Jennifer Lutheran</h6>
-              <span>CEO at pxdraft</span>
             </div>
           </div>
         </swiper-slide>
         <swiper-slide>
-          <div className="w-[340px] sm:w-[447.5px] sm:mr-6 bg-black sm:ml-60 mt-5">
-            <div className="avatar">IMagen 3</div>
-            <div className="media-body">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the {`industry's`} standard dummy
-                text ever since the 1500s.
+          <div className=" max-w-full w-[340px] sm:w-[647.5px] sm:mx-auto bg-[#DF928E] mt-5 rounded-md">
+            <div className="flex justify-center items-baseline align-bottom mt-4 px-4 pb-0 pt-4">
+              <div className="mt-4">
+                <Image
+                  src={goalIcon}
+                  height={200}
+                  width={200}
+                  alt="Imagen de la seccion something else about me"
+                />
+              </div>
+              <div className="mt-4">
+                <Image
+                  src={goalIcon2}
+                  height={200}
+                  width={200}
+                  alt="Imagen de la seccion something else about me"
+                />
+              </div>
+            </div>
+            <div className="media-body px-4 pb-4 pt-4 ">
+              <p className=" font-semibold px-4 pb-4 pt-0 h-[200px] sm:h-[110px]">
+                I am actively seeking opportunities to apply my diverse skill
+                set. Trustworthy and always on the lookout for ways to
+                contribute, I am confident in my ability to bring value to any
+                project or team. Let&apos;s connect and explore how we can
+                create something impactful together!
               </p>
-              <h6>Jennifer Lutheran</h6>
-              <span>CEO at pxdraft</span>
             </div>
           </div>
           <div id="dots" className="mt-10"></div>
