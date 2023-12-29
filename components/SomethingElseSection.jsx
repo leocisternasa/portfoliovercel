@@ -14,7 +14,7 @@ import goalIcon2 from '../public/motivation-isometric-50064.png'
 
 register()
 
-const SomethingElseSection = ({ simethingElseImage, SomethingElseText }) => {
+const SomethingElseSection = () => {
   const swiperElRef = useRef(null)
 
   useEffect(() => {
