@@ -36,29 +36,13 @@ function AboutMe() {
             teamwork and effective communication. I believe in the importance of
             collaboration and knowledge sharing to achieve exceptional results.
           </p>
+          <p className="my-0 sm:mb-4 mb-6">
+            Tech is moving fast, and I&apos;m all about staying curious,
+            learning non-stop, teaming up, and building new connections. If
+            there&apos;s something I don&apos;t know, count on me to pick it up
+            and give my all wherever I work. Let&apos;s make things happen!
+          </p>
           <div className="flex flex-wrap mx-[-15px] mb-10">
-            <div className="relative px-4 basis-auto w-auto max-w-full">
-              <div className="flex flex-nowrap items-center pt-3">
-                <span className="min-w-[55px] font-semibold text-white text-5xl leading-4 ">
-                  5K
-                </span>
-                <div className=" shrink grow pl-3 leading-5">
-                  Projects <br />
-                  Completed.
-                </div>
-              </div>
-            </div>
-            <div className="relative px-4 basis-auto w-auto max-w-full">
-              <div className="flex flex-nowrap items-center pt-3">
-                <span className="min-w-[55px] font-semibold text-white text-5xl leading-4 ">
-                  3K
-                </span>
-                <div className=" shrink grow pl-3 leading-5">
-                  Satisfied <br />
-                  Clients.
-                </div>
-              </div>
-            </div>
             <div className=" flex flex-col sm:flex-row ml-8 sm:ml-0 mt-10 sm:mt-0">
               <AnimatedBorder
                 text={'Contact Me'}
