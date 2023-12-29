@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import dynamic from 'next/dynamic'
 
 const TEModal = dynamic(() =>
@@ -27,7 +28,16 @@ const TEModalFooter = dynamic(() =>
   import('tw-elements-react').then((res) => res.TEModalFooter)
 )
 
-export default function BasicExample({ showModal, setShowModal }) {
+export default function BasicExample({
+  showModal,
+  setShowModal,
+  title,
+  projectDescription,
+  stack,
+  projectImages,
+  goToWebSiteButtonText,
+  projectUrl,
+}) {
   return (
     <div>
       {/* <!-- Button trigger modal --> */}
@@ -36,77 +46,100 @@ export default function BasicExample({ showModal, setShowModal }) {
       <TEModal show={showModal} setShow={setShowModal} scrollable>
         <TEModalDialog centered>
           <TEModalContent>
-            <TEModalHeader>
-              {/* <!--Modal title--> */}
-              <h5 className="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200">
-                Modal title
-              </h5>
-              {/* <!--Close button--> */}
-              <button
-                type="button"
-                className="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
-                onClick={() => setShowModal(false)}
-                aria-label="Close"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="h-6 w-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </TEModalHeader>
-            {/* <!--Modal body--> */}
-            <TEModalBody>
-              <p>
-                This is some placeholder content to show a vertically centered
-                modal. We&apos;ve added some extra copy here to show how
-                vertically centering the modal works when combined with
-                scrollable modals. We also use some repeated line breaks to
-                quickly extend the height of the content, thereby triggering the
-                scrolling. When content becomes longer than the predefined
-                max-height of modal, content will be cropped and scrollable
-                within the modal.
-              </p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <p>Just like that.</p>
-            </TEModalBody>
-            <TEModalFooter>
-              <TERipple rippleColor="light">
+            <div className=" bg-black rounded-md overflow-y-scroll">
+              <TEModalHeader>
+                {/* <!--Modal title--> */}
+                <h5 className="text-xl font-bold leading-normal text-white dark:text-neutral-200">
+                  {title}
+                </h5>
+                {/* <!--Close button--> */}
                 <button
                   type="button"
-                  className="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                  className="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
                   onClick={() => setShowModal(false)}
+                  aria-label="Close"
                 >
-                  Close
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="h-6 w-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
                 </button>
-              </TERipple>
-              <TERipple rippleColor="light">
-                <button
-                  type="button"
-                  className="ml-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                >
-                  Save changes
-                </button>
-              </TERipple>
-            </TEModalFooter>
+              </TEModalHeader>
+              {/* <!--Modal body--> */}
+              <TEModalBody>
+                <div>
+                  <h6 className=" mb-1 font-medium text-xl text-white"></h6>
+                  <label
+                    htmlFor="Role description"
+                    className=" mb-2 text-xs inline-block"
+                  >
+                    {projectDescription}
+                  </label>
+                  <div className="mb-4 flex gap-1">
+                    {stack &&
+                      stack.map((stackItem, index) => (
+                        <span
+                          key={index}
+                          className={`inline-flex items-center rounded-md bg-${stackItem[1]}-500/10 px-2 py-1 text-xs font-medium text-${stackItem[1]}-400 ring-1 ring-inset ring-${stackItem[1]}-500/20`}
+                        >
+                          {stackItem[0]}
+                        </span>
+                      ))}
+                  </div>
+                  <div className="flex flex-wrap">
+                    {projectImages &&
+                      projectImages.map((projectImage, index) => (
+                        <div key={index} className="flex mx-auto mb-4">
+                          <Image
+                            key={index}
+                            src={projectImage}
+                            width={200}
+                            height={400}
+                            alt="image of the project"
+                            className="rounded-md"
+                          />
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              </TEModalBody>
+              <TEModalFooter>
+                <TERipple rippleColor="light">
+                  <a
+                    href={projectUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      type="button"
+                      className="inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 hover:text-white bg-green-500 transition duration-150 ease-in-out hover:bg focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                      onClick={() => setShowModal(false)}
+                    >
+                      {goToWebSiteButtonText}
+                    </button>
+                  </a>
+                </TERipple>
+                <TERipple rippleColor="light">
+                  <button
+                    type="button"
+                    className="ml-2 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 hover:text-white bg-green-500 transition duration-150 ease-in-out hover:bg focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                    onClick={() => setShowModal(false)}
+                  >
+                    Close
+                  </button>
+                </TERipple>
+              </TEModalFooter>
+            </div>
           </TEModalContent>
         </TEModalDialog>
       </TEModal>

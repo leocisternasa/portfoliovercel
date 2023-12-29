@@ -13,8 +13,20 @@ const ModalButton = dynamic(() => import('./ModalButton'), {
   ssr: false,
 })
 
-function ProjectCard({ title, backgroundImg, projectUrl, stack }) {
+function ProjectCard({
+  title,
+  backgroundImg,
+  projectUrl,
+  stack,
+  projectDescription,
+  projectImages,
+  goToWebSiteButtonText,
+}) {
   const [showModal, setShowModal] = useState(false)
+
+  const stackWord = stack.reduce((sum, stackItem) => {
+    return (sum += stackItem[0] + ' ')
+  }, '')
   return (
     <>
       <div className="relative flex items-center justify-center w-full shadow-xl rounded-xl p-4 group hover:bg-[#2fbf71] bg-black ">
@@ -32,11 +44,20 @@ function ProjectCard({ title, backgroundImg, projectUrl, stack }) {
             {title}
           </h3>
           <p className="pb-4 pt-2 text-white text-center font-normal">
-            {stack}
+            {stackWord}
           </p>
           <ModalButton setShowModal={setShowModal} />
         </div>
-        <ProjectModal showModal={showModal} setShowModal={setShowModal} />
+        <ProjectModal
+          showModal={showModal}
+          setShowModal={setShowModal}
+          title={title}
+          projectDescription={projectDescription}
+          stack={stack}
+          projectImages={projectImages}
+          goToWebSiteButtonText={goToWebSiteButtonText}
+          projectUrl={projectUrl}
+        />
       </div>
     </>
   )
