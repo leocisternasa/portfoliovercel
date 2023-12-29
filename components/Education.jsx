@@ -2,8 +2,14 @@
 import { useState } from 'react'
 import React from 'react'
 import { FcAbout } from 'react-icons/fc'
-import EducationModal from './EducationModal'
+
 import dynamic from 'next/dynamic'
+
+const EducationModal = dynamic(() => import('./EducationModal'), {
+  ssr: false,
+})
+
+// const {FcAbout} = dynamic(()=> import())
 
 const TERipple = dynamic(() =>
   import('tw-elements-react').then((res) => res.TERipple)
