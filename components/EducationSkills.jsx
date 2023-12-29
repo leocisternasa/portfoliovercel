@@ -20,6 +20,16 @@ function EducationSkills() {
         ' HTTPs',
         ' Usage of Babel for transpilation from ES6 to ES5',
       ],
+      stack: [
+        ['HTML', 'red'],
+        ['CSS', 'green'],
+        ['JavaScript', 'purple'],
+        ['NodeJS', 'blue'],
+        ['Express', 'cyan'],
+        ['SQL', 'yellow'],
+        ['PostgreSQL', 'pink'],
+        ['Sequelize', 'emerald'],
+      ],
     },
     {
       title: 'JavaScript | Data Structures | Algorithms',
@@ -34,6 +44,7 @@ function EducationSkills() {
 
         'Search and sorting algorithms, graph algorithms, tree and graph traversal algorithms, divide and conquer algorithms.',
       ],
+      stack: [['JavaScript', 'green']],
     },
     {
       title: 'React | Redux | Zustand ',
@@ -49,6 +60,11 @@ function EducationSkills() {
         'Hooks (useState, useEffect, etc.)',
         'Integration with APIs and Data Fetching',
         'State Management using Redux and Zustand',
+      ],
+      stack: [
+        ['ReactJS', 'purple'],
+        ['Redux', 'blue'],
+        ['Zustand', 'red'],
       ],
     },
   ]
@@ -68,6 +84,7 @@ function EducationSkills() {
               informationTitle={information[0].title}
               informationContent={information[0].content}
               hasInformation={true}
+              stack={information[0].stack}
             />
             <Education
               year={'2019-2020'}
@@ -76,6 +93,7 @@ function EducationSkills() {
               informationTitle={information[1].title}
               informationContent={information[1].content}
               hasInformation={true}
+              stack={information[1].stack}
             />
             <Education
               year={'2018-2019'}
@@ -86,12 +104,13 @@ function EducationSkills() {
               informationTitle={information[2].title}
               informationContent={information[2].content}
               hasInformation={true}
+              stack={information[2].stack}
             />
             <Education
               year={'2008-2014'}
               course={'Graduated as a DDS, Doctor in Dental Surgery.'}
               company={`Universidad de Chile | Dentristry School`}
-              hasInformation={true}
+              hasInformation={false}
             />
           </ul>
         </div>

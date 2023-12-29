@@ -1,5 +1,13 @@
+'use client'
+import { useState } from 'react'
 import React from 'react'
 import { FcAbout } from 'react-icons/fc'
+import EducationModal from './EducationModal'
+import dynamic from 'next/dynamic'
+
+const TERipple = dynamic(() =>
+  import('tw-elements-react').then((res) => res.TERipple)
+)
 
 function Education({
   year,
@@ -8,7 +16,9 @@ function Education({
   informationTitle,
   informationContent,
   hasInformation,
+  stack,
 }) {
+  const [showModal, setShowModal] = useState(false)
   return (
     <>
       <li className=" p-5 ">
@@ -20,7 +30,11 @@ function Education({
           {hasInformation && (
             <div className="group">
               <div className=" cursor-pointer">
-                <FcAbout />
+                <TERipple rippleColor="white">
+                  <button type="button" onClick={() => setShowModal(true)}>
+                    <FcAbout />
+                  </button>
+                </TERipple>
               </div>
               <div className="hidden group-hover:block absolute transform z-[999] bg-black p-4 rounded transition-opacity duration-500 opacity-0 group-hover:opacity-100 w-[550px] h-[535px] ml-16 -top-3">
                 <h1 className="p-4 my-1 text-center text-base font-medium">
@@ -31,6 +45,13 @@ function Education({
                     informationContent.map((el, i) => <li key={i}>{el}</li>)}
                 </ul>
               </div>
+              <EducationModal
+                showModal={showModal}
+                setShowModal={setShowModal}
+                informationContent={informationContent}
+                informationTitle={informationTitle}
+                stack={stack}
+              />
             </div>
           )}
         </div>
