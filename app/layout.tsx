@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import './globals.css'
 import { Roboto } from 'next/font/google'
 import 'tw-elements-react/dist/css/tw-elements-react.min.css'
+import GoogleAnalytics from '@/components/google-analytics/GoogleAnalytics'
 const roboto = Roboto({ weight: '400', subsets: ['latin'] })
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,6 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        ) : null}
         <Header />
         {children}
       </body>
