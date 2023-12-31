@@ -34,10 +34,10 @@ function ContactMeSection() {
   }
   return (
     <div id="contactMe" className="w-full lg:h-full">
-      <div className="sm:max-w-[1240px] sm:m-auto sm:px-2 py-16 sm:w-full w-80 mx-auto">
+      <div className="sm:max-w-[1240px] sm:m-auto sm:px-2 py-16 sm:w-full">
         <SectionTitle title={'CONTACT ME'} />
-        <div className="grid lg:grid-cols-5 gap-8 sm:mx-auto ">
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl bg-black rounded-xl p-4">
+        <div className="grid grid-cols-5 gap-8 sm:mx-auto ">
+          <div className="col-span-5 lg:col-span-2 w-full h-full shadow-xl bg-black rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
                 {/* <Image
@@ -83,7 +83,7 @@ function ContactMeSection() {
               </div>
             </div>
           </div>
-          <div className="col-span-3 md:w-full h-auto shadow-xl rounded-xl lg:p-4 bg-black w-[330px]">
+          <div className="col-span-5 sm:col-span-3 md:w-full h-auto shadow-xl rounded-xl lg:p-4 bg-black ">
             <div className="p-4">
               <form method="POST" onSubmit={handleOnSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
