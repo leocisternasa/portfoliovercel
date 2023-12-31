@@ -46,6 +46,17 @@ function Education({
                 <h1 className="p-4 my-1 text-center text-base font-medium">
                   {informationTitle}
                 </h1>
+                <div className="mb-4 flex gap-1 max-w-full flex-wrap">
+                  {stack &&
+                    stack.map((stackItem, index) => (
+                      <span
+                        key={index}
+                        className={`flex items-center rounded-md bg-${stackItem[1]}-500/10 px-2 py-1 text-xs font-medium text-${stackItem[1]}-400 ring-1 ring-inset ring-${stackItem[1]}-500/20`}
+                      >
+                        {stackItem[0]}
+                      </span>
+                    ))}
+                </div>
                 <ul className="p-4 gap-1 list-disc">
                   {informationContent &&
                     informationContent.map((el, i) => <li key={i}>{el}</li>)}
