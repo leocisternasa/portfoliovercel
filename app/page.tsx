@@ -13,7 +13,7 @@ export default function Home() {
     <main className="lg:left-[250px] top-0 lg:absolute lg:h-full lg:w-[calc(100%-250px)] bg-[#0f0f19]">
       <div className="overflow-auto bg-[#10101a]">
         <div className="overflow-hidden relative">
-          <div className="relative w-full px-4 mx-auto lg:w-[950px]">
+          <div className="relative px-4 mx-auto lg:w-[950px]">
             <HeroSection />
             <AboutMe />
             <Separator />

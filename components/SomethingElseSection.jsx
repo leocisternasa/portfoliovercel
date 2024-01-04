@@ -67,7 +67,7 @@ const SomethingElseSection = () => {
         }}
       >
         <swiper-slide>
-          <div className="max-w-full w-[340px] sm:w-[647.5px] sm:mx-auto bg-[#01ADC7] mt-5 rounded-md">
+          <div className="max-w-full sm:w-[647.5px] sm:mx-auto bg-[#01ADC7] mt-5 rounded-md h-[400px] ">
             <div className="flex justify-center items-center relative">
               <div>
                 <Image
@@ -81,7 +81,7 @@ const SomethingElseSection = () => {
                 <FaReact />
               </div>
             </div>
-            <div className="media-body p-4 h-[200px] sm:h-[125px] ">
+            <div className="media-body p-4 h-[200px] sm:h-[125px] mb-7 ">
               <p className="px-4 pb-4 font-semibold ">
                 With 6 years of experience as a dentist, I have led dental
                 teams, coordinated the procurement of medications and supplies,
@@ -92,7 +92,7 @@ const SomethingElseSection = () => {
           </div>
         </swiper-slide>
         <swiper-slide>
-          <div className=" max-w-full w-[340px] sm:w-[647.5px] sm:mx-auto bg-[#8B80F9] mt-5 rounded-md">
+          <div className=" max-w-full sm:w-[647.5px] sm:mx-auto bg-[#8B80F9] mt-5 rounded-md h-[400px]">
             <div className="flex justify-center items-baseline align-bottom mt-4 px-4 pb-0 pt-4">
               <div className="mt-4">
                 <Image
@@ -123,7 +123,7 @@ const SomethingElseSection = () => {
           </div>
         </swiper-slide>
         <swiper-slide>
-          <div className=" max-w-full w-[340px] sm:w-[647.5px] sm:mx-auto bg-[#DF928E] mt-5 rounded-md">
+          <div className=" max-w-full sm:w-[647.5px] sm:mx-auto bg-[#DF928E] mt-5 rounded-md h-[400px]">
             <div className="flex justify-center items-baseline align-bottom mt-4 px-4 pb-0 pt-4">
               <div className="mt-4">
                 <Image

@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import React from 'react'
-import { FcAbout } from 'react-icons/fc'
+import { IoIosInformationCircleOutline } from 'react-icons/io'
 
 import dynamic from 'next/dynamic'
 
@@ -38,7 +38,7 @@ function Education({
               <div className=" cursor-pointer">
                 <TERipple rippleColor="white">
                   <button type="button" onClick={() => setShowModal(true)}>
-                    <FcAbout />
+                    <IoIosInformationCircleOutline className="h-5 w-5 hover:text-green-500" />
                   </button>
                 </TERipple>
               </div>
