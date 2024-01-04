@@ -25,7 +25,10 @@ function AboutMeBadge() {
         NextJS
       </span>
       <span className="inline-flex items-center rounded-md bg-pink-400/10 px-2 py-1 text-xs font-medium text-pink-400 ring-1 ring-inset ring-pink-400/20">
-        TailwindCSS
+        Tailwind
+      </span>
+      <span className="inline-flex items-center rounded-md bg-rose-400/10 px-2 py-1 text-xs font-medium text-rose-400 ring-1 ring-inset ring-rose-400/20">
+        Bootstrap
       </span>
       <span className="inline-flex items-center rounded-md bg-cyan-400/10 px-2 py-1 text-xs font-medium text-cyan-400 ring-1 ring-inset ring-cyan-400/20">
         Firebase
