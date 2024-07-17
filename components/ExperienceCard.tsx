@@ -1,6 +1,16 @@
 import React from 'react'
 import Image from 'next/image'
 
+type ExperienceCardProps = {
+  position: string
+  company: string
+  schedule: string
+  workDescription: string
+  workFunctions: string[]
+  companyLogo: string
+  stack: string[][]
+}
+
 function ExperienceCard({
   position,
   company,
@@ -9,7 +19,7 @@ function ExperienceCard({
   workFunctions,
   companyLogo,
   stack,
-}) {
+}: ExperienceCardProps) {
   return (
     <div className=" p-9 ">
       <div className="flex flex-wrap mx-[-15px]">

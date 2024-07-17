@@ -5,6 +5,7 @@ import docmoviLogo from '../public/docmovi-logo.png.webp'
 import servicioSaludLogo from '../public/servicio-salud-chiloe.jpg'
 import benchapalLogo from '../public/benchpal.png'
 import freelanceLogo from '../public/freelanceLogo.png'
+import takemedLogo from '../public/takemedLogo.svg'
 
 export const experience = [
   {
@@ -78,6 +79,28 @@ export const experience = [
       ['PostgreSQL', 'cyan'],
     ],
   },
+  {
+    position: 'Full Stack Developer',
+    company: 'Takemed Health | Remote | Jan 2024 - Present',
+    schedule: 'Full Time | Part Time',
+    workDescription:
+      "Development of a landing page, web portal with ReactJS | NextJS, and mobile application in React Native | Expo. Responsible for the company's frontend",
+    workFunctions: [
+      'Creation of a landing page based on the provided design, with a contact section via email, and creation of a survey with results for interested users as added value.',
+      'creation of autentication and authorization system with JWT and integration with the backend.',
+      'Creation of a web portal with ReactJS | NextJS, where users can access their medical records, schedule appointments, and receive notifications.',
+      'Currently creating a mobile application in React Native | Expo, where users can access their medical records, schedule appointments, and receive notifications.',
+    ],
+    companyLogo: takemedLogo,
+    stack: [
+      ['ReactJS', 'green'],
+      ['NextJS', 'purple'],
+      ['Typescript', 'blue'],
+      ['React Native', 'red'],
+      ['Tailwind', 'pink'],
+      ['PostgreSQL', 'cyan'],
+    ],
+  },
 ]
 function ExperienceSection() {
   return (
@@ -86,6 +109,15 @@ function ExperienceSection() {
         <SectionTitle title={'EXPERIENCE'} />
       </div>
       <div className="bg-[#0b0b13] mt-4 w-full align-top inline-block ">
+        <ExperienceCard
+          position={experience[4].position}
+          company={experience[4].company}
+          schedule={experience[4].schedule}
+          workDescription={experience[4].workDescription}
+          workFunctions={experience[4].workFunctions}
+          companyLogo={experience[4].companyLogo}
+          stack={experience[4].stack}
+        />
         <ExperienceCard
           position={experience[3].position}
           company={experience[3].company}
